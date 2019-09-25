@@ -5,6 +5,8 @@
 
   .icon {
     transform: translateY(-50%);
+    display: block;
+    text-decoration: none;
 
     i {
       width: 60px;
@@ -38,6 +40,7 @@
     color: rgb(42, 42, 42);
     margin-top: -0.5rem;
     letter-spacing: 1px;
+    text-decoration: none;
 
     h5 {
       font-weight: 600;
@@ -49,7 +52,7 @@
     }
   }
 
-  &.active {
+  &:hover {
     i {
       background-color: $primary;
       color: #ffffff;
