@@ -6,6 +6,7 @@
   font-weight: 600;
   padding: 10px 30px;
 
+
   &:not(.no-hover):hover {
     color: #ffffff !important;
     background-color: $primary;
@@ -19,6 +20,10 @@
   line-height: 24px;
   padding: 5px 10px;
   font-weight: 400;
+
+  &:not(.no-hover) {
+    display: none;
+  }
 }
 
 .btn-outline {
