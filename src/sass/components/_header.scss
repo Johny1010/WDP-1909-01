@@ -222,3 +222,48 @@ header {
     }
   }
 }
+
+@media (max-width: 767px) {
+  header {
+    .text-right ul li {
+      .login {
+        display: none;
+      }
+    }
+
+    .company-claim {
+      display: flex;
+
+      .phone-number {
+        display: flex;
+        justify-content: flex-end;
+        flex-basis: 50%;
+        order: 2;
+        min-width: 150px;
+
+        p {
+          font-size: 14px;
+        }
+      }
+
+      .cart {
+        display: flex;
+        justify-content: flex-end;
+        flex-basis: 40%;
+        order: 1;
+        bottom: 5%;
+        right: 5%;
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  header {
+    .text-right ul li {
+      .login_mobile {
+        display: none;
+      }
+    }
+  }
+}
