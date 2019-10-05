@@ -1,14 +1,13 @@
 .btn-main {
-  background-color: #2a2a2a;
-  color: #ffffff;
+  background-color: $button-hover;
+  color: $not-active-button;
   font-size: 16px;
   line-height: 24px;
   font-weight: 600;
   padding: 10px 30px;
 
-
   &:not(.no-hover):hover {
-    color: #ffffff !important;
+    color: $not-active-button !important;
     background-color: $primary;
     text-decoration: none;
   }
@@ -29,23 +28,23 @@
 .btn-outline {
   display: inline-block;
   padding: 5px 10px;
-  border: 1px solid #2a2a2a;
-  color: #2a2a2a;
+  border: 1px solid $button-hover;
+  color: $button-hover;
   font-size: 13px;
   line-height: 22px;
 
   &.active {
-    color: #d58e32;
-    border-color: #d58e32;
+    color: $primary;
+    border-color: $primary;
 
     &:hover {
-      background-color: #d58e32;
-      color: #ffffff;
+      background-color: $primary;
+      color: $not-active-button;
     }
   }
 
   &:hover {
-    background-color: #2a2a2a;
-    color: #ffffff;
+    background-color: $button-hover;
+    color: $not-active-button;
   }
 }
