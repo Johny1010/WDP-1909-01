@@ -1,0 +1,25 @@
+.section-markup {
+  padding-bottom: 5rem;
+}
+.box {
+  padding: 20px;
+  -webkit-box-flex: auto;
+  flex: auto;
+  width: 550px;
+  .right {
+    margin-bottom: 30px;
+    img {
+      width: 100%;
+    }
+  }
+}
+
+.wrapper {
+  display: flexbox;
+  -ms-flex-wrap: wrap;
+  -ms-flexbox-direction: column;
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+  display: -webkit-box;
+  display: flex;
+}
