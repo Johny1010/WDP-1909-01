@@ -1,17 +1,27 @@
 .product-box {
-  background-color: #ffffff;
+  background-color: $not-active-button;
   border: 1px solid #e1e1e1;
   margin-bottom: 2rem;
+
+  &:hover .btn-main-small {
+    display: block;
+  }
+
+  &:hover .no-hover {
+    background-color: $primary;
+  }
 
   .photo {
     position: relative;
     padding: 80% 10px 0 10px;
+
     background: {
       color: #f4f5f7;
       size: contain;
       position: center;
       repeat: no-repeat;
     }
+
     overflow: hidden;
     align-items: flex-end;
 
@@ -22,7 +32,7 @@
       transform: translateX(-50%);
       background-color: #292929;
       border-radius: 50%;
-      color: #ffffff;
+      color: $not-active-button;
       padding: 30px 15px 5px 15px;
     }
 
@@ -79,4 +89,10 @@
     justify-content: space-between;
     align-items: center;
   }
+}
+
+.old-price {
+  text-decoration: line-through;
+  color: #a5a5a5;
+  background-color: #fff;
 }
