@@ -17,21 +17,18 @@
       padding-bottom: 2rem;
       font-size: 20px;
     }
+  }
 
-    .col-3 {
-      padding-left: 0 !important;
-      display: inline-block;
-      h5 {
-        text-align: left;
-      }
-      img {
-        text-align: right;
-      }
+  .col-3 {
+    padding-left: 0 !important;
+    display: inline-block;
+
+    h5 {
+      text-align: left;
     }
 
-    .col-2 {
-      padding-right: 0 !important;
-      text-align: right;
+    img {
+      float: right !important;
     }
   }
 }
