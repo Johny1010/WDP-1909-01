@@ -1,0 +1,37 @@
+.section--feedback {
+  padding: 1rem 0;
+
+  .row {
+    justify-content: center;
+  }
+
+  .panel-bar {
+    margin-bottom: 0px;
+  }
+
+  .col.col-8 {
+    margin: 20px auto;
+    text-align: center;
+
+    i {
+      padding-bottom: 2rem;
+      font-size: 20px;
+    }
+
+    .col-3 {
+      padding-left: 0 !important;
+      display: inline-block;
+      h5 {
+        text-align: left;
+      }
+      img {
+        text-align: right;
+      }
+    }
+
+    .col-2 {
+      padding-right: 0 !important;
+      text-align: right;
+    }
+  }
+}
