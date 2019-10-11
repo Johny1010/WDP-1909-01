@@ -1,0 +1,12 @@
+.section-brands {
+  margin-bottom: 20px;
+  display: flex;
+  .container > .boxbrands {
+    border-bottom: 3px solid #6a6a6a;
+    border-top: 3px solid #6a6a6a;
+    img .brandimg {
+      width: 100px;
+      height: 100px;
+    }
+  }
+}
