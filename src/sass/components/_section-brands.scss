@@ -1,12 +1,29 @@
 .section-brands {
   margin-bottom: 20px;
   display: flex;
-  .container > .boxbrands {
-    border-bottom: 3px solid #6a6a6a;
-    border-top: 3px solid #6a6a6a;
-    img .brandimg {
-      width: 100px;
+  .boxbrands {
+    border-top: 3px solid #cccccc;
+    border-bottom: 3px solid #cccccc;
+    margin-bottom: 10px;
+    opacity: 0.9;
+    button {
       height: 100px;
+      width: 40px;
+      background-color: #2a2a2a;
+      color: white;
+      opacity: 1;
+      &:hover {
+        color: #e0a38e;
+      }
     }
   }
+}
+
+.brandimg {
+  width: 150px;
+  height: 100px;
+  margin: 0px 6px 0px 10px;
+}
+.line {
+  margin: 20px 0px 20px 0px;
 }
