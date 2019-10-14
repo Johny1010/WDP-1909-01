@@ -29,6 +29,8 @@
 
   .menu {
     text-align: center;
+    margin-right: 65px;
+
     ul {
       margin: 0;
       padding: 0;
@@ -87,5 +89,47 @@
         }
       }
     }
+  }
+}
+
+.tns-nav {
+  position: relative;
+  bottom: 45px;
+  text-align: right;
+
+  button {
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    border-radius: 6px;
+    background-color: #e1e1e1;
+    margin-left: 0.6rem;
+    border: none;
+
+    &:hover {
+      background-color: $primary;
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .panel-bar {
+    .menu {
+      margin-right: 100px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .panel-bar {
+    .menu {
+      margin-right: 0;
+    }
+  }
+  .tns-nav {
+    position: relative;
+    bottom: 0;
+    text-align: center;
+    padding: 0.5rem;
   }
 }
