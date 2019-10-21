@@ -6,7 +6,7 @@
   }
 
   .panel-bar {
-    margin-bottom: 0px;
+    margin-bottom: 0;
   }
 
   .col.col-8 {
@@ -14,21 +14,22 @@
     text-align: center;
 
     i {
-      padding-bottom: 2rem;
+      padding-bottom: 20px;
       font-size: 20px;
     }
   }
 
   .col-3 {
-    padding-left: 0 !important;
+    padding-left: 0;
     display: inline-block;
 
     h5 {
       text-align: left;
     }
-
-    img {
-      float: right !important;
+    &.img-author{
+      display: flex;
+      justify-content: flex-end;
     }
+    
   }
 }
