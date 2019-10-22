@@ -2,14 +2,12 @@ footer {
   .footer-menu {
     background-color: $footer-bg;
     padding: 3rem 0;
-
     .menu-wrapper {
       h6 {
-        color: #ffffff;
+        color: $white;
         text-transform: uppercase;
         margin: 0 0 1rem 0;
       }
-
       ul {
         margin: 0 0 1.5rem 0;
         padding: 0;
@@ -19,33 +17,27 @@ footer {
             font-size: 14px;
             line-height: 30px;
             color: rgb(169, 169, 169);
-
             &:hover {
-              color: #ffffff;
+              color: $white;
             }
           }
         }
       }
     }
-
     .payment-methods {
       margin: 0;
       padding: 0;
       list-style: none;
-
       li {
         display: inline-block;
       }
     }
   }
-
   .bottom-bar {
     background-color: $footer-claim-bg;
-
     .container > .row {
       height: 95px;
     }
-
     .copyright {
       p {
         margin: 0;
@@ -54,21 +46,17 @@ footer {
         line-height: 26px;
       }
     }
-
     .socialmedia {
       ul {
         margin: 0;
         padding: 0;
         list-style: none;
-
         li {
           display: inline-block;
           margin-left: 1rem;
-
           a {
             color: rgb(169, 169, 169);
             text-decoration: none;
-
             &:hover {
               color: $primary;
             }
