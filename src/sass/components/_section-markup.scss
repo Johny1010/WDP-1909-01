@@ -81,3 +81,20 @@
     }
   }
 }
+
+@media (max-width: 767px) {
+  .wrapper {
+    margin: 15px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .wrapper {
+    justify-content: center;
+  }
+
+  .box {
+    margin-right: 0px;
+    margin-bottom: 40px;
+  }
+}
