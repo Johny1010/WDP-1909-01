@@ -96,3 +96,39 @@
   color: #a5a5a5;
   background-color: #fff;
 }
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.col-auto.dots {
+  display: none;
+
+  &.show {
+    display: block;
+    animation-name: fadeIn;
+    animation-duration: 300ms;
+    animation-timing-function: linear;
+  }
+}
+
+.tab-content {
+  display: none;
+  flex-wrap: wrap;
+
+  &.active {
+    display: flex;
+    flex-wrap: wrap;
+    animation-name: fadeIn;
+    animation-duration: 400ms;
+    animation-timing-function: linear;
+    width: 100%;
+
+  }
+}

@@ -20,8 +20,12 @@
 @import "components/section-markup";
 @import "components/section--features";
 @import "components/section--features";
-// @import "components/section--feedback";
+@import "components/section--feedback";
 
 body {
   font-family: "Poppins", sans-serif;
+}
+
+.row-1{
+  visibility: hidden;
 }
