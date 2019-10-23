@@ -1,5 +1,5 @@
 .product-box {
-    background-color: #ffffff;
+    background-color: $white;
     border: 1px solid #e1e1e1;
     margin-bottom: 2rem;
     .photo {
@@ -20,7 +20,7 @@
             transform: translateX(-50%);
             background-color: #292929;
             border-radius: 50%;
-            color: #ffffff;
+            color: $white;
             padding: 30px 15px 5px 15px;
         }
         .buttons {
@@ -68,6 +68,44 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+    }
+}
+
+.old-price {
+    text-decoration: line-through;
+    color: #a5a5a5;
+    background-color: #fff;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.col-auto.dots {
+    display: none;
+    &.show {
+        display: block;
+        animation-name: fadeIn;
+        animation-duration: 300ms;
+        animation-timing-function: linear;
+    }
+}
+
+.tab-content {
+    display: none;
+    flex-wrap: wrap;
+    &.active {
+        display: flex;
+        flex-wrap: wrap;
+        animation-name: fadeIn;
+        animation-duration: 400ms;
+        animation-timing-function: linear;
+        width: 100%;
     }
 }
 
