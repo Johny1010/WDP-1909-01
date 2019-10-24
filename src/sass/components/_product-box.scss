@@ -54,15 +54,25 @@
     }
 
     .stars {
-      a {
+
+      a,
+      &:hover a:hover~a {
         text-decoration: none;
         color: rgb(42, 42, 42);
         @extend .far;
         @extend .fa-star;
+        transition: .5s;
 
-        &.full {
-          @extend .fas;
+        &:hover {
+          font-weight: 900;
+          color: $primary;
         }
+      }
+
+      &:hover a,
+      & a.full {
+        font-weight: 900;
+        color: $primary;
       }
     }
   }
