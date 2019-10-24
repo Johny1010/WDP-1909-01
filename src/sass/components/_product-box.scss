@@ -2,17 +2,29 @@
     background-color: $white;
     border: 1px solid #e1e1e1;
     margin-bottom: 2rem;
+  
+    &:hover .btn-main-small {
+    display: block;
+  }
+
+  &:hover .no-hover {
+    background-color: $primary;
+  }
+  
     .photo {
         position: relative;
         padding: 80% 10px 0 10px;
+      
         background: {
             color: #f4f5f7;
             size: contain;
             position: center;
             repeat: no-repeat;
         }
+      
         overflow: hidden;
         align-items: flex-end;
+      
         .sale {
             position: absolute;
             top: -30px;
@@ -23,11 +35,13 @@
             color: $white;
             padding: 30px 15px 5px 15px;
         }
+      
         .buttons {
             display: flex;
             justify-content: space-between;
         }
     }
+  
     .content {
         text-align: center;
         padding: 20px;
@@ -77,38 +91,6 @@
     background-color: #fff;
 }
 
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-
-.col-auto.dots {
-    display: none;
-    &.show {
-        display: block;
-        animation-name: fadeIn;
-        animation-duration: 300ms;
-        animation-timing-function: linear;
-    }
-}
-
-.tab-content {
-    display: none;
-    flex-wrap: wrap;
-    &.active {
-        display: flex;
-        flex-wrap: wrap;
-        animation-name: fadeIn;
-        animation-duration: 400ms;
-        animation-timing-function: linear;
-        width: 100%;
-    }
-}
-
 //tablet portrait
 @media (max-width: 991px) {
     .col-3 {
@@ -132,4 +114,40 @@
         flex: 0 0 100%;
         max-width: 100%;
     }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.col-auto.dots {
+  display: none;
+
+  &.show {
+    display: block;
+    animation-name: fadeIn;
+    animation-duration: 300ms;
+    animation-timing-function: linear;
+  }
+}
+
+.tab-content {
+  display: none;
+  flex-wrap: wrap;
+
+  &.active {
+    display: flex;
+    flex-wrap: wrap;
+    animation-name: fadeIn;
+    animation-duration: 400ms;
+    animation-timing-function: linear;
+    width: 100%;
+
+  }
 }

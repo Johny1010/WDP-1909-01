@@ -12,8 +12,19 @@
 @import "components/panel-bar";
 @import "components/post-box";
 @import "components/product-box";
+
 @import "components/gallery";
+
+@import "components/home";
+@import "components/section-markup";
 @import "components/section--features";
+@import "components/section--features";
+@import "components/section--feedback";
+
 body {
   font-family: "Poppins", sans-serif;
+}
+
+.row-1{
+  visibility: hidden;
 }
