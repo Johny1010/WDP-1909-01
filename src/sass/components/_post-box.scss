@@ -1,8 +1,21 @@
 .post-box {
   margin-bottom: 2rem;
 
+  &:hover {
+    text-decoration: none;
+
+    h5 {
+      color: $primary;
+    }
+
+    .btn-main {
+      background-color: $primary;
+    }
+  }
+
   .cover {
     padding: 70% 25px 0 25px;
+    display: block;
     background: {
       color: #f4f5f7;
       size: cover;
@@ -13,7 +26,9 @@
       padding: 15px 20px;
       display: flex;
       background-color: #ffffff;
+      color: #000000;
       font-size: 14px;
+      display: block;
 
       & > * {
         flex: 1 1 auto;
@@ -21,19 +36,22 @@
 
       .date {
         text-align: left;
+        display: block;
       }
 
       .comments {
         text-align: right;
+        display: block;
       }
     }
   }
 
   .post-info {
     padding: 25px;
+    display: block;
+    color: #000000;
 
     h5 {
-      color: $primary;
       font-size: 16px;
       line-height: 24px;
       letter-spacing: 1px;
@@ -49,6 +67,7 @@
     .more {
       text-align: center;
       padding-top: 30px;
+      display: block;
     }
   }
 }
