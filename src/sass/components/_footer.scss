@@ -78,3 +78,25 @@ footer {
     }
   }
 }
+
+@media (max-width: 320px) {
+  .col img {
+    max-width: inherit;
+
+    footer .bottom-bar .container > .row {
+      display: flex;
+      justify-content: center;
+    }
+  }
+}
+@media (max-width: 768px) {
+  footer .bottom-bar .container > .row {
+    display: grid;
+    height: 95px;
+
+    .copyright p {
+      display: flex;
+      margin-bottom: 5px;
+    }
+  }
+}
