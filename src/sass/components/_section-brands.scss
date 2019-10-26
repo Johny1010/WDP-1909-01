@@ -1,0 +1,29 @@
+.section-brands {
+  margin-bottom: 20px;
+  display: flex;
+  .boxbrands {
+    border-top: 3px solid #ccc;
+    border-bottom: 3px solid #ccc;
+    margin-bottom: 10px;
+    opacity: 0.9;
+    button {
+      height: 100px;
+      width: 40px;
+      background-color: #2a2a2a;
+      color: white;
+      opacity: 1;
+      &:hover {
+        color: #e0a38e;
+      }
+    }
+  }
+}
+
+.brandimg {
+  width: 150px;
+  height: 100px;
+  margin: 0px 6px 0px 10px;
+}
+.line {
+  margin: 20px 0;
+}
