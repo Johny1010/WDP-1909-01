@@ -1,3 +1,14 @@
 .section--features {
   padding: 5rem 0;
 }
+
+@media (max-width: 992px) {
+  .section--features {
+    .col {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      flex-basis: 50%;
+    }
+  }
+}
