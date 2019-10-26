@@ -105,6 +105,14 @@
         flex: 0 0 33.3333333333%;
         max-width: 33.3333333333%;
     }
+
+//mobile portrait
+@media (max-width: 567px),
+(max-height: 567px) {
+    .col-3 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
 }
 
 //mobile portrait
@@ -151,3 +159,4 @@
 
   }
 }
+
